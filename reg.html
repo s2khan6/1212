@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="reg.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="signup-container">
+      <h2 class="signup-title">SIGN UP</h2>
+      <form id="signup-form" class="signup-form">
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" id="username" placeholder="Username" required />
+        </div>
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" id="email" placeholder="E - mail" required />
+        </div>
+        <p id="email-error" class="error-message hidden">
+          Введите корректный email
+        </p>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Confirm Password"
+            required
+          />
+        </div>
+        <p id="password-error" class="error-message hidden">
+          Пароли не совпадают
+        </p>
+        <button type="submit" class="signup-button">CREATE ACCOUNT</button>
+        <p class="login-link">
+          Already have an account? <a href="login.html">Login here</a>
+        </p>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
